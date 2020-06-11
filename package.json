@@ -28,6 +28,31 @@
         "groupName": "all dependencies"
       }
     },
+    "aws-cdk": {
+      "extends": [
+        "config:base"
+      ],
+      "timezone": "Asia/Tokyo",
+      "schedule": ["every weekend"],
+      "lockFileMaintenance": {
+        "enabled": true,
+        "schedule": [
+          "before 3am on the first day of the month"
+        ]
+      },
+      "packageRules": [
+        {
+          "packagePatterns": [
+            "@aws-cdk/*",
+            "aws-cdk"
+          ],
+          "groupName": "CDK-Resources"
+        }
+      ],
+      "minor": {
+        "groupName": "all dependencies"
+      }
+    },
     "examples": {
       "extends": [
         "config:base"
