@@ -1,23 +1,23 @@
 {
-  "name": "@digitalcube/renovate-config",
+  "name": "@wpkyoto/renovate-config",
   "version": "1.0.0",
-  "description": "Renovate configurations for Digitalcube Projects",
+  "description": "Renovate configurations for wpkyoto Projects",
   "scripts": {
     "test": "renovate-config-validator",
     "semantic-release": "semantic-release"
   },
   "keywords": [],
-  "author": "Digitalcube",
+  "author": "wpkyoto",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/megumiteam/renovate-config/issues"
+    "url": "https://github.com/wpkyoto/renovate-config/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/megumiteam/renovate-config.git"
+    "url": "https://github.com/wpkyoto/renovate-config.git"
   },
   "renovate-config": {
     "default": {
