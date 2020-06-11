@@ -1,5 +1,8 @@
 name: "Release package"
-on: push
+on: 
+  push:
+    branches:
+      - master
 
 jobs:
   release_package:
