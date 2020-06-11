@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Renovate configurations for Digitalcube Projects",
   "scripts": {
-    "test": "renovate-config-validator"
+    "test": "renovate-config-validator",
+    "semantic-release": "semantic-release"
   },
   "keywords": [],
   "author": "Digitalcube",
@@ -11,13 +12,22 @@
   "publishConfig": {
     "access": "public"
   },
+  "bugs": {
+    "url": "https://github.com/megumiteam/renovate-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/megumiteam/renovate-config.git"
+  },
   "renovate-config": {
     "default": {
       "extends": [
         "config:base"
       ],
       "timezone": "Asia/Tokyo",
-      "schedule": ["every weekend"],
+      "schedule": [
+        "every weekend"
+      ],
       "lockFileMaintenance": {
         "enabled": true,
         "schedule": [
@@ -70,6 +80,7 @@
     }
   },
   "devDependencies": {
-    "renovate": "21.6.3"
+    "renovate": "^21.6.3",
+    "semantic-release": "^17.0.8"
   }
 }
