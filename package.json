@@ -1,0 +1,47 @@
+{
+  "name": "@digitalcube/renovate-config",
+  "version": "1.0.0",
+  "description": "Renovate configurations for Digitalcube Projects",
+  "scripts": {
+    "test": "renovate-config-validator"
+  },
+  "keywords": [],
+  "author": "Digitalcube",
+  "license": "MIT",
+  "renovate-config": {
+    "default": {
+      "extends": [
+        "config:base"
+      ],
+      "timezone": "Asia/Tokyo",
+      "schedule": ["every weekend"],
+      "lockFileMaintenance": {
+        "enabled": true,
+        "schedule": [
+          "before 3am on the first day of the month"
+        ]
+      },
+      "minor": {
+        "groupName": "all dependencies"
+      }
+    },
+    "examples": {
+      "extends": [
+        "config:base"
+      ],
+      "automerge": true,
+      "vulnerabilityAlerts": {
+        "enabled": true
+      },
+      "lockFileMaintenance": {
+        "enabled": true
+      },
+      "minor": {
+        "groupName": "all dependencies"
+      }
+    }
+  },
+  "devDependencies": {
+    "renovate": "^21.6.3"
+  }
+}
