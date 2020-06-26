@@ -63,6 +63,44 @@
         "groupName": "all dependencies"
       }
     },
+    "commitlint": {
+      "extends": [
+        "@wpkyoto:default"
+      ],
+      "packageRules": [{
+        "packagePatterns": [
+          "@commitlint/*"
+        ],
+        "groupName": "commitlint",
+        "automerge": true
+      }]
+    },
+    "typescript": {
+      "extends": [
+        "@wpkyoto:default"
+      ],
+      "packageRules": [{
+        "packagePatterns": [
+          "typescript",
+          "ts-node",
+          "tsdx"
+        ],
+        "groupName": "typescript"
+      }]
+    },
+    "jest": {
+      "extends": [
+        "@wpkyoto:default"
+      ],
+      "packageRules": [{
+        "packagePatterns": [
+          "jest*",
+          "ts-jest",
+          "jest"
+        ],
+        "groupName": "Jest resources"
+      }]
+    },
     "examples": {
       "extends": [
         "config:base"
