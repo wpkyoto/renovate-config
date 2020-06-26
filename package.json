@@ -22,7 +22,9 @@
   "renovate-config": {
     "default": {
       "extends": [
-        "config:base"
+        "config:base",
+        "github>hatena/renovate-config:automergePin",
+        "github>hatena/renovate-config:automergeTypesMinor"
       ],
       "timezone": "Asia/Tokyo",
       "schedule": [
