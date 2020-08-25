@@ -135,7 +135,7 @@
     "@commitlint/config-conventional": "9.1.2",
     "husky": "4.2.5",
     "lint-staged": "10.2.11",
-    "renovate": "22.23.2",
+    "renovate": "22.25.1",
     "semantic-release": "17.1.1"
   }
 }
