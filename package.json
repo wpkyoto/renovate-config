@@ -137,5 +137,11 @@
     "lint-staged": "12.5.0",
     "renovate": "29.36.2",
     "semantic-release": "17.4.7"
+  },
+  "overrides": {
+    "re2": "1.27.2"
+  },
+  "resolutions": {
+    "re2": "1.27.2"
   }
 }
